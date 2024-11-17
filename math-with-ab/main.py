@@ -55,15 +55,18 @@ class Mathematics:
     def square_root_of_sum(self, pow_value: int = 1):
         return (self.a ** pow_value + self.b ** pow_value) ** 0.5
 
-op = Mathematics()
-op.a = int(input())
-op.b = int(input())
+if __name__ == '__main__':
+    op = Mathematics()
+    op.a = int(input())
+    op.b = int(input())
 
-print(op.add())
-print(op.subtract())
-print(op.multiply())
-print(op.divide())
-print(op.divide_by_int())
-print(op.modulus())
-print(op.square_root_of_sum(10))
+    print(op.add())
+    print(op.subtract())
+    print(op.multiply())
+    print(op.divide())
+    print(op.divide_by_int())
+    print(op.modulus())
+    print(op.square_root_of_sum(10))
+
+
 
