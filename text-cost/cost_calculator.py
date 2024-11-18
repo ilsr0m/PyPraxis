@@ -22,7 +22,7 @@ class RoubleCostCalculator(ICostCalculator):
 
 # dollar calculation
 class DollarCostCalculator(ICostCalculator):
-    def calculate(self, text : str, currency_type : DollarCurrency):
+    def calculate(self, text : str, currency_type : ICurrencyType):
         dollar_currency = DollarCurrency()
         dollar_currency.__dict__ = currency_type.__dict__
         try:
