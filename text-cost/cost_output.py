@@ -3,7 +3,7 @@ from currency_type import *
 
 # Interface (abstract class) defines output method
 # which can be overridden by many derived classes
-class ICostOutput:
+class ICostOutput(ABC):
     @abstractmethod
     def output(self, currency_type : ICurrencyType):
         pass

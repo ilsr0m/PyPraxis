@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from currency_type import *
 
-class ICostCalculator:
+class ICostCalculator(ABC):
     @abstractmethod
     def calculate(self, text : str, currency_type : ICurrencyType):
         return currency_type
